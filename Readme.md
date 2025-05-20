@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Ярослав Башков](https://up.htmlacademy.ru/adaptive-individual/2/user/2566059).
-* Наставник:  [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
