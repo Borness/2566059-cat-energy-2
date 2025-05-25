@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body">
@@ -28,7 +32,7 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="#">
+                <a href="catalog.html">
                   Каталог продукции
                 </a>
               </li>
@@ -47,7 +51,13 @@
         <div class="promo__container">
           <h1 class="promo__title title">Функциональное питание для котов</h1>
           <p class="promo__description">Занялся собой?Займись котом!</p>
-          <img class="promo__image" src="images/index-can-mobile-1.svg" width="280" height="270" alt="Баночка кошачьего питания Cat Energy">
+          <div class="promo__image">
+            <picture>
+              <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-eat-desktop@1x.png 1x, images/index-eat-desktop@2x.png 2x">
+              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-eat-tablet@1x.png 1x, images/index-eat-tablet@2x.png 2x">
+              <img class="promo__image-pic" alt="Баночка кошачьего питания Cat Energy." src="images/index-eat-mobile@1x.png" srcset="images/index-eat-mobile@2x.png 2x" width="280" height="270">
+            </picture>
+          </div>
           <a class="promo__button button button--primary" href="#">Подобрать программу</a>
         </div>
       </section>
@@ -95,8 +105,14 @@
           </div>
             <p class="examples__price">Затраты на питание: <span class="examples__price-value">15 000 руб.</span></p>
             <div class="examples__slider slider">
-              <img class="slider__image-before" src="images/cat-state-after.svg" width="280" height="256" alt="Фотография кота до программы">
-              <img class="slider__image-after" src="images/foot-cat-state-before.svg" width="280" height="256" alt="Фотография кота после программы">
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+                <img class="slider__image slider__image--before" alt="Фотография кота до программы." src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256">
+              </picture>
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+                <img class="slider__image slider__image--after" alt="Фотография кота после программы." src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256">
+              </picture>
               <div class="slider__range">
                 <span class="visually-hidden">Ползунок</span>
               </div>
@@ -109,7 +125,11 @@
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <img class="contacts__map" src="images/location.svg" width="320" height="362" alt="Местоположение компании Cat Energy">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contacts__map" alt="Местоположение компании Cat Energy." src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362">
+        </picture>
     </section>
     </main>
     <footer class="main-footer">

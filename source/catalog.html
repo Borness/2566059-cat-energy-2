@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="page__body">
@@ -28,7 +32,7 @@
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="#">
+                <a href="catalog.html">
                   Каталог продукции
                 </a>
               </li>
@@ -50,7 +54,11 @@
             <li class="main-catalog__item">
               <div class="main-catalog__card">
                 <a class="main-catalog__image-link" href="#">
-                  <img class="main-catalog__image-card" src="images/img-container.svg" width="140" height="107" alt="Cat Energy PRO со вкусом курицы 500 грамм">
+                  <picture>
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/chiken-container-desktop@1x.png 1x, images/chiken-container-desktop@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/chiken-container-tablet@1x.png 1x, images/chiken-container-tablet@2x.png 2x">
+                    <img class="main-catalog__image-card" alt="Cat Energy PRO со вкусом курицы 500 грамм." width="140" height="107" src="images/chiken-container-mobile@1x.png" srcset="images/chiken-container-mobile@2x.png 2x">
+                  </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
                   <p class="main-catalog__item-title">Cat Energy PRO 500 г</p>
@@ -75,7 +83,11 @@
             <li class="main-catalog__item">
               <div class="main-catalog__card">
                 <a class="main-catalog__image-link" href="#">
-                  <img class="main-catalog__image-card" src="images/img-container-big.svg" width="140" height="107" alt="Cat Energy PRO со вкусом курицы 1000 грамм">
+                  <picture>
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/chiken-container-big-desktop@1x.png 1x, images/chiken-container-big-desktop@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/chiken-container-big-tablet@1x.png 1x, images/chiken-container-big-tablet@2x.png 2x">
+                    <img class="main-catalog__image-card" alt="Cat Energy PRO со вкусом курицы 1000 грамм." width="140" height="107" src="images/chiken-container-big-mobile@1x.png" srcset="images/chiken-container-big-mobile@2x.png 2x">
+                  </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
                   <p class="main-catalog__item-title">Cat Energy PRO 1000 г</p>
@@ -100,7 +112,11 @@
             <li class="main-catalog__item">
               <div class="main-catalog__card">
                 <a class="main-catalog__image-link" href="#">
-                  <img class="main-catalog__image-card" src="images/img-container-fish.svg" width="140" height="107" alt="Cat Energy PRO со вкусом рыбы 500 грамм">
+                  <picture>
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/fich-container-desktop@1x.png 1x, images/fich-container-desktop@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/fich-container-tablet@1x.png 1x, images/fich-container-tablet@2x.png 2x">
+                    <img class="main-catalog__image-card" alt="Cat Energy PRO со вкусом рыбы 500 грамм." width="140" height="107" src="images/fich-container-mobile@1x.png" srcset="images/fich-container-mobile@2x.png 2x">
+                  </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
                   <p class="main-catalog__item-title">Cat Energy PRO 500 г</p>
@@ -125,7 +141,11 @@
             <li class="main-catalog__item">
               <div class="main-catalog__card">
                 <a class="main-catalog__image-link" href="#">
-                  <img class="main-catalog__image-card" src="images/img-container-fish-big.svg" width="140" height="107" alt="Cat Energy PRO со вкусом рыбы 1000 грамм">
+                  <picture>
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/fich-container-big-desktop@1x.png 1x, images/fich-container-big-desktop@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/fich-container-big-tablet@1x.png 1x, images/fich-container-big-tablet@2x.png 2x">
+                    <img class="main-catalog__image-card" alt="Cat Energy PRO со вкусом рыбы 1000 грамм." width="140" height="107" src="images/fich-container-big-mobile@1x.png" srcset="images/fich-container-big-mobile@2x.png 2x">
+                  </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
                   <p class="main-catalog__item-title">Cat Energy PRO 1000 г</p>
@@ -150,7 +170,11 @@
             <li class="main-catalog__item">
               <div class="main-catalog__card">
                 <a class="main-catalog__image-link" href="#">
-                  <img class="main-catalog__image-card" src="images/img-container-grech.svg" width="140" height="107" alt="Cat Energy PRO со вкусом гречки 500 грамм">
+                  <picture>
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-container-desktop@1x.png 1x, images/buckwheat-container-desktop@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-container-tablet@1x.png 1x, images/buckwheat-container-tablet@2x.png 2x">
+                    <img class="main-catalog__image-card" alt="Cat Energy PRO со вкусом гречки 500 грамм." width="140" height="107" src="images/buckwheat-container-mobile@1x.png" srcset="images/buckwheat-container-mobile@2x.png 2x">
+                  </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
                   <p class="main-catalog__item-title">Cat Energy Slim 500 г</p>
@@ -175,7 +199,11 @@
             <li class="main-catalog__item">
               <div class="main-catalog__card">
                 <a class="main-catalog__image-link" href="#">
-                  <img class="main-catalog__image-card" src="images/img-container-grech-big.svg" width="140" height="107" alt="Cat Energy PRO со вкусом гречки 100- грамм">
+                  <picture>
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-container-big-desktop@1x.png 1x, images/buckwheat-container-big-desktop@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-container-big-tablet@1x.png 1x, images/buckwheat-container-big-tablet@2x.png 2x">
+                    <img class="main-catalog__image-card" alt="Cat Energy PRO со вкусом гречки 1000 грамм." width="140" height="107" src="images/buckwheat-container-big-mobile@1x.png" srcset="images/buckwheat-container-big-mobile@2x.png 2x">
+                  </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
                   <p class="main-catalog__item-title">Cat Energy Slim 500 г</p>
@@ -200,7 +228,11 @@
             <li class="main-catalog__item">
               <div class="main-catalog__card">
                 <a class="main-catalog__image-link" href="#">
-                  <img class="main-catalog__image-card" src="images/img-container-ris.png" width="140" height="107" alt="Cat Energy PRO со вкусом риса 500 грамм">
+                  <picture>
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/rice-container-desktop@1x.png 1x, images/rice-container-desktop@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/rice-container-tablet@1x.png 1x, images/rice-container-tablet@2x.png 2x">
+                    <img class="main-catalog__image-card" alt="Cat Energy PRO со вкусом риса 500 грамм." width="140" height="107" src="images/rice-container-mobile@1x.png" srcset="images/rice-container-mobile@2x.png 2x">
+                  </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
                   <p class="main-catalog__item-title">Cat Energy Slim 500 г</p>
@@ -274,7 +306,7 @@
             <label class="subscribe-form__label" for="email">
               Подпишитесь на наши новости и не пропустите ни одного предложения!
             </label>
-            <input class="subscribe-form__email" type="email" id="email" name="Ваш email" placeholder="KUKLACHEV@GMAIL.COM">
+            <input class="subscribe-form__email" type="email" id="email" name="Ваш email" placeholder="KUKLACHEV@GMAIL.COM" required>
             <button class="subscribe-form__button button button--primary" type="submit">
               Подписаться
             </button>
@@ -287,7 +319,11 @@
           <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <img class="contacts__map" src="images/location.svg" width="320" height="362" alt="Местоположение компании Cat Energy">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contacts__map" alt="Местоположение компании Cat Energy." src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
