@@ -1,8 +1,9 @@
-.header {
+.main-header {
   background-color: $primary-background-color;
+  border-bottom: 1px solid $secondary-background-color;
 }
 
-.header__container {
+.main-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;

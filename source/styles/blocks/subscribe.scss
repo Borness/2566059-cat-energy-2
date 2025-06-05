@@ -1,0 +1,14 @@
+.subscribe__title {
+  @include secondary-font(24px, 24px);
+  color: $second-color-text;
+}
+
+.subscribe-form__label {
+  @include secondary-font(16px, 24px);
+  color: $second-color-text;
+}
+
+.subscribe-form__email {
+  @include secondary-font(20px, 30px);
+  color: $second-color-text;
+}

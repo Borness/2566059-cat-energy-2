@@ -1,0 +1,9 @@
+.main-navigation__list {
+  @include clean-list;
+}
+
+.site-list__link {
+  @include secondary-font(20px, 20px, uppercase);
+  color: #000000;
+  text-decoration: none;
+}

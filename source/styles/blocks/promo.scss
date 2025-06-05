@@ -1,0 +1,17 @@
+.promo__container {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 60%, #ffffff 40%), image-set("../images/promo-background@1x.jpg" 1x type("image/jpg"), "../images/promo-background@2x.jpg" 2x type("image/jpg"));
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  @include secondary-font(36px, 36px);
+  color: $any-background-color;
+  text-align: center;
+}
+
+.promo__description {
+  @include secondary-font(14px, 14px, uppercase);
+  color: $any-background-color;
+  text-align: center;
+}

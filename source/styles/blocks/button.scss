@@ -1,0 +1,18 @@
+.button {
+  @include secondary-font(16px, 20px, uppercase);
+  color: $any-background-color;
+  text-decoration: none;
+}
+
+.button--primary {
+  background-color: $primary-button-color;
+}
+
+.button--secondary {
+  color: $primary-color-text;
+  background-color: $second-button-color;
+}
+
+.more-catalog__button {
+  border: none;
+}

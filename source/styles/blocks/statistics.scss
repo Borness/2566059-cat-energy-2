@@ -1,0 +1,10 @@
+.statistics__index {
+  @include secondary-font(24px, 24px, uppercase);
+  color: $second-color-text;
+}
+
+.statistics__description {
+  font-size: 12px;
+  line-height: 12px;
+  color: $primary-color-text;
+}
