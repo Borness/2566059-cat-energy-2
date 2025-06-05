@@ -4,7 +4,7 @@
 
 .services-program__title {
   @include secondary-font(24px, 37px, uppercase);
-  color:#000000;
+  color: #000000;
 }
 
 .services-program__description {
@@ -13,6 +13,7 @@
 
 .services-program__link {
   @include secondary-font(16px, 16px, uppercase);
-  color:#000000;
+  color: #000000;
+
   @include clean-list;
 }

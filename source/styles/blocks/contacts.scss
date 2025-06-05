@@ -3,16 +3,17 @@
 }
 
 .contacts__title {
-  @include secondary-font(16px, 20px, uppercase); /* Исправленный вызов миксина */
-  color: $second-color-text; /* Цвет текста заголовка */
+  @include secondary-font(16px, 20px, uppercase);
+  color: $second-color-text;
 }
 
 .contacts__address {
   line-height: 20px;
   font-style: normal;
-  color: $primary-color-text; /* Цвет текста адреса, предполагаю */
+  color: $primary-color-text;
 }
 
 .contacts__map {
-
+  height: 362px;
+  border: none;
 }
