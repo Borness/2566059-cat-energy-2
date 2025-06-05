@@ -1,0 +1,19 @@
+.contacts {
+  background-color: $secondary-background-color;
+}
+
+.contacts__title {
+  @include secondary-font(16px, 20px, uppercase);
+  color: $second-color-text;
+}
+
+.contacts__address {
+  line-height: 20px;
+  font-style: normal;
+  color: $primary-color-text;
+}
+
+.contacts__map {
+  height: 362px;
+  border: none;
+}

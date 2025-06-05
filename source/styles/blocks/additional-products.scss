@@ -1,0 +1,14 @@
+.additional-products__title {
+  @include secondary-font(24px, 24px);
+  color: $second-color-text;
+}
+
+.additional-products__name {
+  @include secondary-font(16px, 16px);
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional-products__item {
+  @include clean-list;
+}

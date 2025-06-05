@@ -1,0 +1,31 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-scr) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-scr;
+  }
+}
+
+@mixin clean-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+@mixin primary-font($font-size, $line-height, $text-transform: none, $color: #444444) {
+  font-family: "Lato", "Arial", sans-serif;
+  line-height: $line-height;
+  font-size: $font-size;
+  text-transform: $text-transform;
+  color: $color;
+}
+
+@mixin secondary-font($font-size, $line-height, $text-transform: none, $font-weight: 400, $color: #000000) {
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: $line-height;
+  font-size: $font-size;
+  text-transform: $text-transform;
+  font-weight: $font-weight;
+  color: $color;
+}
