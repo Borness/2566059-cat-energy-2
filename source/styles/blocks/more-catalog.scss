@@ -1,0 +1,9 @@
+.more-catalog__title {
+  @include secondary-font(16px, 20px);
+  color: $second-color-text;
+}
+
+.more-catalog__info {
+  font-size: 12px;
+  line-height: 16px;
+}

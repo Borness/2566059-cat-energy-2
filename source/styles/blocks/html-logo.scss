@@ -1,0 +1,9 @@
+.logo-html {
+  @include clean-list;
+}
+
+.logo-html__text {
+  color: $primary-color-text;
+  font-size: 16px;
+  line-height: 20px;
+}

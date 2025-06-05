@@ -1,0 +1,17 @@
+.main-catalog__item-link {
+  @include clean-list;
+}
+
+.main-catalog__item-title {
+  @include secondary-font(16px, 20px);
+  color: $second-color-text;
+}
+
+.main-catalog__card-text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.main-catalog__item {
+  background-color: $secondary-background-color;
+}

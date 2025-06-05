@@ -1,0 +1,19 @@
+.services-program {
+  background-color: $secondary-background-color;
+}
+
+.services-program__title {
+  @include secondary-font(24px, 37px, uppercase);
+  color: #000000;
+}
+
+.services-program__description {
+  color: $primary-color-text;
+}
+
+.services-program__link {
+  @include secondary-font(16px, 16px, uppercase);
+  color: #000000;
+
+  @include clean-list;
+}

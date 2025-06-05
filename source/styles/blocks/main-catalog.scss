@@ -1,0 +1,12 @@
+.main-catalog__title {
+  @include secondary-font(36px, 36px);
+  color: $second-color-text;
+}
+
+.main-catalog__card-list {
+  @include clean-list;
+}
+
+.main-catalog__list {
+  @include clean-list;
+}

@@ -1,0 +1,17 @@
+.examples {
+  background-color: $any-background-color;
+}
+
+.examples__title {
+  @include secondary-font(36px, 40px);
+  color: $second-color-text;
+}
+
+.examples__price {
+  @include secondary-font(14px, 20px, uppercase);
+  color: $second-color-text;
+}
+
+.examples__item {
+  @include clean-list;
+}
