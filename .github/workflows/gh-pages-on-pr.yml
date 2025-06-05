@@ -16,12 +16,16 @@ jobs:
 
     steps:
 
+      - name:  stasa1
+        run: git remote -v
+
+      - name:  stasa2
+        run: git branch -a
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: 'main'
-
-
+          ref: 'refs/pull/${{ github.event.pull_request.number }}/merge'
 
       - name: Setup Node
         uses: actions/setup-node@v4
