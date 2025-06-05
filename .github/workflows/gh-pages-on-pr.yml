@@ -16,12 +16,6 @@ jobs:
 
     steps:
 
-      - name:  stasa1
-        run: git remote -v
-
-      - name:  stasa2
-        run: git branch -a
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
