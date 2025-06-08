@@ -1,5 +1,6 @@
 .main-catalog__item-link {
   @include clean-list;
+  @include clean-text;
 }
 
 .main-catalog__item-title {
@@ -12,6 +13,3 @@
   line-height: 16px;
 }
 
-.main-catalog__item {
-  background-color: $secondary-background-color;
-}
