@@ -16,12 +16,19 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo-link logo" href="catalog.html">
-          <img src="images/logo-pic.svg" width="60" height="50" alt="Товарный знак компании».">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="logo__image" src="images/logo-pic-mobile.svg" width="33" height="38" alt="Товарный знак компании.">
+          </picture>
         </a>
         <a class="main-header__logo-text-link logo-text" href="index.html">
           <img src="images/logo-text.svg" width="101" height="18"  alt="Логотип с надписью Cat Energy">
         </a>
         <nav class="main-navigation">
+          <button class="main-navigation__toggle main-navigation__toggle--closed" type="button">
+            <span class="visually-hidden">Открыть меню/закрыть меню</span>
+          </button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -59,7 +66,7 @@
                   </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
-                  <p class="main-catalog__item-title">Cat Energy PRO 500 г</p>
+                  <p class="main-catalog__item-title">CAT ENERGY PRO 500 Г</p>
                 </a>
                 <ul class="main-catalog__card-list">
                   <li class="main-catalog__card-item">
@@ -88,7 +95,7 @@
                   </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
-                  <p class="main-catalog__item-title">Cat Energy PRO 1000 г</p>
+                  <p class="main-catalog__item-title">CAT ENERGY PRO 1000 Г</p>
                 </a>
                 <ul class="main-catalog__card-list">
                   <li class="main-catalog__card-item">
@@ -117,7 +124,7 @@
                   </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
-                  <p class="main-catalog__item-title">Cat Energy PRO 500 г</p>
+                  <p class="main-catalog__item-title">CAT ENERGY PRO 500 Г</p>
                 </a>
                 <ul class="main-catalog__card-list">
                   <li class="main-catalog__card-item">
@@ -146,7 +153,7 @@
                   </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
-                  <p class="main-catalog__item-title">Cat Energy PRO 1000 г</p>
+                  <p class="main-catalog__item-title">CAT ENERGY PRO 1000 Г</p>
                 </a>
                 <ul class="main-catalog__card-list">
                   <li class="main-catalog__card-item">
@@ -175,7 +182,7 @@
                   </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
-                  <p class="main-catalog__item-title">Cat Energy Slim 500 г</p>
+                  <p class="main-catalog__item-title">CAT ENERGY SLIM 500 Г</p>
                 </a>
                 <ul class="main-catalog__card-list">
                   <li class="main-catalog__card-item">
@@ -204,7 +211,7 @@
                   </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
-                  <p class="main-catalog__item-title">Cat Energy Slim 500 г</p>
+                  <p class="main-catalog__item-title">CAT ENERGY SLIM 500 Г</p>
                 </a>
                 <ul class="main-catalog__card-list">
                   <li class="main-catalog__card-item">
@@ -233,7 +240,7 @@
                   </picture>
                 </a>
                 <a class="main-catalog__item-link" href="#">
-                  <p class="main-catalog__item-title">Cat Energy Slim 500 г</p>
+                  <p class="main-catalog__item-title">CAT ENERGY SLIM 500 Г</p>
                 </a>
                 <ul class="main-catalog__card-list">
                   <li class="main-catalog__card-item">
@@ -254,7 +261,7 @@
             </li>
           </ul>
           <div class="main-catalog__more more-catalog">
-            <p class="more-catalog__title">Показать еще 100500 товаров</p>
+            <p class="more-catalog__title">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</p>
             <p class="more-catalog__info">На самом деле вкусов гораздо больше!</p>
             <button class="more-catalog__button button button--secondary" type="button">Показать все</button>
           </div>
@@ -292,8 +299,8 @@
               <a class="additional-products__button button button--primary" href="#">Заказать</a>
             </li>
           </ul>
-          <div class="promo">
-            <p class="promo__info">Закажите все и получите чехол для кота в подарок!</p>
+          <div class="promo-gift">
+            <p class="promo-gift__info">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>

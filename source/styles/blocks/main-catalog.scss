@@ -5,8 +5,10 @@
 
 .main-catalog__card-list {
   @include clean-list;
+  @include clean-text;
 }
 
 .main-catalog__list {
   @include clean-list;
+  @include clean-text;
 }

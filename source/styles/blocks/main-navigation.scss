@@ -1,9 +1,30 @@
 .main-navigation__list {
   @include clean-list;
+  @include clean-text;
 }
 
 .site-list__link {
   @include secondary-font(20px, 20px, uppercase);
   color: #000000;
   text-decoration: none;
+}
+
+.main-navigation__toggle {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background-color: $primary-background-color;
+  background-image: url("../../icons/stack.svg#menu");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-navigation__toggle--closed {
+  background-image: url("../../icons/stack.svg#close");
+  width: 24px;
+  height: 24px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $primary-background-color;
 }

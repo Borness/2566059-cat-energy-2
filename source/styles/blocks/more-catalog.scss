@@ -3,7 +3,19 @@
   color: $second-color-text;
 }
 
+.more-catalog__button {
+  color: #444444;
+}
+
 .more-catalog__info {
   font-size: 12px;
   line-height: 16px;
+}
+
+.more-catalog__title::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 30px;
+  background: url("../../icons/stack.svg#more");
 }

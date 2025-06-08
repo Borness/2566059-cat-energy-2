@@ -1,3 +1,4 @@
 .services__container {
   @include clean-list;
+  @include clean-text;
 }

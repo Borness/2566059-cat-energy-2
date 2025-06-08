@@ -4,5 +4,37 @@
 }
 
 .methods__list {
-  list-style: none;
+  @include clean-list;
+  @include clean-text;
+}
+
+.methods__item::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $image-background-color;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.methods__item--natural::before {
+  background-image: url("../../icons/stack.svg#natural-icon");
+  background-size: 30px 32px;
+}
+
+.methods__item--cook::before {
+  background-image: url("../../icons/stack.svg#cook-icon");
+  background-size: 26px 29px;
+}
+
+.methods__item--nutrition::before {
+  background-image: url("../../icons/stack.svg#nutrition-icon");
+  background-size: 25px 30px;
+}
+
+.methods__item--result::before {
+  background-image: url("../../icons/stack.svg#result-icon");
+  background-size: 26px 31px;
 }

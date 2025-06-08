@@ -11,4 +11,5 @@
 
 .additional-products__item {
   @include clean-list;
+  @include clean-text;
 }
