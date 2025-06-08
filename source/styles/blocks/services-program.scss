@@ -1,14 +1,17 @@
 .services-program {
   background-color: $secondary-background-color;
+  position: relative;
+  padding: 20px;
 }
 
 .services-program__title {
   @include secondary-font(24px, 37px, uppercase);
   color: #000000;
+  margin: 0 0 0 60px;
 }
 
 .services-program__description {
-  color: $primary-color-text;
+  color: $second-color-text;
 }
 
 .services-program__link {
@@ -16,4 +19,65 @@
   color: #000000;
 
   @include clean-list;
+  @include clean-text;
+}
+
+.services-program__link::after {
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-repeat: no-repeat;
+  background-color: currentColor;
+  content: "";
+}
+
+.services__weight-loss::before {
+  content: "";
+  top: 10px;
+  left: 20px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: $image-background-color;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.services__weight-loss::after {
+  content: "";
+  display: block;
+  top: 5px;
+  left: 30px;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__weight-gain::before {
+  content: "";
+  top: 10px;
+  left: 20px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: $image-background-color;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.services__weight-gain::after {
+  content: "";
+  display: block;
+  top: 10px;
+  left: 10px;
+  width: 65px;
+  height: 50px;
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-repeat: no-repeat;
+  background-position: center;
 }

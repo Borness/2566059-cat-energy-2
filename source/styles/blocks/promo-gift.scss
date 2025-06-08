@@ -1,0 +1,19 @@
+.promo-gift {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 99%, #ffffff 1%), image-set("../images/promo-info-background@1x.jpg" 1x type("image/jpg"), "../images/promo-info-background@2x.jpg" 2x type("image/jpg"));
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.promo-gift__info::before {
+  content: "";
+  background: url("../../icons/stack.svg#gift") 50% no-repeat;
+  width: 78px;
+  height: 80px;
+  margin: 0 auto 50px;
+  display: block;
+}
+
+.promo-gift__info {
+  color: #ffffff;
+  text-align: center;
+}
