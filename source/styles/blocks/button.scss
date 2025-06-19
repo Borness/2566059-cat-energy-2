@@ -2,6 +2,8 @@
   @include secondary-font(16px, 20px, uppercase);
   color: $primary-color-text;
   text-decoration: none;
+  display: block;
+  text-align: center;
 }
 
 .button--primary {
@@ -15,4 +17,27 @@
 
 .more-catalog__button {
   border: none;
+  width: 100%;
+}
+
+.subscribe-form__button {
+  width: 100%;
+  min-height: 56px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+
+  @media (min-width: $tablet) {
+    width: 256px;
+  }
+}
+
+.button:hover,
+.button:focus {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }

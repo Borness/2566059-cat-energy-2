@@ -1,4 +1,42 @@
-.services__container {
+.services-program__list {
   @include clean-list;
   @include clean-text;
+
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.services__item {
+  @media (max-width: calc($tablet - 1px)) {
+    min-height: 266px;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 374px;
+  }
+}
+
+.services-container {
+  @media (max-width: calc($tablet - 1px)) {
+    margin: 0 20px 20px;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0 30px 45px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto 71px;
+  }
 }

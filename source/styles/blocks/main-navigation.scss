@@ -1,12 +1,51 @@
 .main-navigation__list {
   @include clean-list;
   @include clean-text;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  position: relative;
+}
+
+.site-list {
+  @media (max-width: calc($tablet - 1px)) {
+    &--opened {
+      position: absolute;
+      display: block;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px 33px;
+    flex-wrap: wrap;
+  }
 }
 
 .site-list__link {
   @include secondary-font(20px, 20px, uppercase);
   color: #000000;
   text-decoration: none;
+  display: block;
+
+  @media (max-width: calc($tablet - 1px)) {
+    padding: 22px 20px 24px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 12px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+  }
 }
 
 .main-navigation__toggle {
@@ -14,17 +53,76 @@
   height: 24px;
   border: 0;
   background-color: $primary-background-color;
-  background-image: url("../../icons/stack.svg#menu");
+  background-image: url("../../icons/stack.svg#close");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $mobile) {
+    position: absolute;
+  }
 }
 
 .main-navigation__toggle--closed {
-  background-image: url("../../icons/stack.svg#close");
+  background-image: url("../../icons/stack.svg#menu");
   width: 24px;
   height: 24px;
   border: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-color: $primary-background-color;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.site-list__link--catalog {
+  @media (min-width: $desktop) {
+    color: #000000;
+  }
+}
+
+
+.logo {
+  @media (max-width: $mobile) {
+    justify-content: space-between;
+    width: calc(50% + 30px);
+  }
+}
+
+.site-list__item:hover,
+.site-list__item:focus {
+  opacity: 0.6;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
+}
+
+.site-list__item--active::after {
+  content: "";
+  background-color: $primary-button-color;
+  height: 2px;
+  position: absolute;
+  left: 175px;
+  right: 370px;
+  bottom: -1px;
+  display: block;
+
+  @media (min-width: $desktop) {
+    background-color: #ffffff;
+  }
+}
+
+.catalog-site-list__item--active::after {
+  content: "";
+  background-color: $primary-button-color;
+  height: 2px;
+  position: absolute;
+  left: 270px;
+  right: 180px;
+  bottom: -1px;
 }

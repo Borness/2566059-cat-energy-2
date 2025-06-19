@@ -18,3 +18,16 @@
   mask-repeat: no-repeat;
   background-color: #666666;
 }
+
+.logo-html:focus::after,
+.logo-html:hover::after {
+  background-color: $primary-button-color;
+}
+
+.logo-html:active::after {
+  opacity: 0.3;
+}
+
+.logo-html__text:active {
+  opacity: 0.3;
+}

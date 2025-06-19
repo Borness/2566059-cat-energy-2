@@ -14,6 +14,31 @@
 }
 
 .contacts__map {
-  height: 362px;
-  border: none;
+  display: block;
+  width: 100%;
+}
+
+.contacts__wrapper {
+  position: relative;
+}
+
+.contacts__container {
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    z-index: 1;
+    top: 115px;
+    left: 110px;
+    padding: 60px 80px;
+    width: 500px;
+
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }

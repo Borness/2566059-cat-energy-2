@@ -15,20 +15,18 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo-link logo" href="catalog.html">
+        <a class="main-header__logo-link logo" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="images/logo-pic-desktop.svg" width="70" height="59" type="image/svg+xml">
             <source media="(min-width: 768px)" srcset="images/logo-pic-tablet.svg" width="60" height="50" type="image/svg+xml">
             <img class="logo__image" src="images/logo-pic-mobile.svg" width="33" height="38" alt="Товарный знак компании.">
           </picture>
-        </a>
-        <a class="main-header__logo-text-link logo-text" href="index.html">
-          <img src="images/logo-text.svg" width="101" height="18"  alt="Логотип с надписью Cat Energy">
-        </a>
-        <nav class="main-navigation">
+          <img class="logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип с надписью Cat Energy">
           <button class="main-navigation__toggle main-navigation__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню/закрыть меню</span>
           </button>
+        </a>
+        <nav class="main-navigation">
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -67,19 +65,21 @@
         </div>
       </section>
       <section class="services">
-        <h2 class="visually-hidden">Виды программ для котов</h2>
-        <ul class="services__container">
-          <li class="services__weight-loss services-program">
-            <h3 class="services-program__title">Похудение</h3>
-            <p class="services-program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?Пора на диету!Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="services-program__link" href="#">Каталог slim</a>
-          </li>
-          <li class="services__weight-gain services-program">
-            <h3 class="services-program__title">Набор массы</h3>
-            <p class="services-program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="services-program__link" href="#">Каталог pro</a>
-          </li>
-        </ul>
+        <div class="services-container">
+          <h2 class="visually-hidden">Виды программ для котов</h2>
+          <ul class="services-program__list">
+            <li class="services__weight-loss services-program">
+              <h3 class="services-program__title">Похудение</h3>
+              <p class="services-program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?Пора на диету!Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="services-program__link" href="#">Каталог slim</a>
+            </li>
+            <li class="services__weight-gain services-program">
+              <h3 class="services-program__title">Набор массы</h3>
+              <p class="services-program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="services-program__link" href="#">Каталог pro</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="methods">
         <div class="methods__container">
@@ -108,36 +108,38 @@
               </li>
             </ul>
           </div>
-            <p class="examples__price">Затраты на питание: <span class="examples__price-value">15 000 руб.</span></p>
-            <div class="examples__slider slider">
-              <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
-                <img class="slider__image slider__image--before" alt="Фотография кота до программы." src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256">
-              </picture>
-              <picture>
-                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
-                <img class="slider__image slider__image--after" alt="Фотография кота после программы." src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256">
-              </picture>
-              <div class="slider__range">
-                <button class="slider-main" type="button">
-                  <span class="visually-hidden">Ползунок</span>
-                </button>
-              </div>
+          <p class="examples__price">Затраты на питание: <span class="examples__price-value">15 000 руб.</span></p>
+          <div class="examples__slider slider">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+              <img class="slider__image slider__image--before" alt="Фотография кота до программы." src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256">
+            </picture>
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+              <img class="slider__image slider__image--after" alt="Фотография кота после программы." src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256">
+            </picture>
+            <div class="slider__range">
+              <button class="slider-main" type="button">
+                <span class="visually-hidden">Ползунок</span>
+              </button>
             </div>
           </div>
+        </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container">
-          <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__wrapper">
+          <div class="contacts__container">
+            <h2 class="visually-hidden">Наши контакты</h2>
+            <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          </div>
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img class="contacts__map" alt="Местоположение компании Cat Energy." src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362">
+          </picture>
         </div>
-        <picture>
-          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img class="contacts__map" alt="Местоположение компании Cat Energy." src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362">
-        </picture>
-    </section>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__container">
