@@ -117,7 +117,7 @@
   }
 }
 
-.catalog-site-list__item--active::after {
+.site-list__item--catalog-active::after {
   content: "";
   background-color: $primary-button-color;
   height: 2px;
