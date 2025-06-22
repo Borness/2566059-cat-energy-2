@@ -1,10 +1,30 @@
 .statistics__index {
   @include secondary-font(24px, 24px, uppercase);
   color: $second-color-text;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 14px 55px 25px;
 }
 
 .statistics__description {
   font-size: 12px;
   line-height: 12px;
   color: $any-color-text;
+  position: relative;
+  text-align: center;
+  margin: 0;
+
+
+  @media (min-width: $tablet) {
+    top: -8px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    top: -11px;
+    background-color: #eaeaea;
+  }
 }

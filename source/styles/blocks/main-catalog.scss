@@ -67,6 +67,10 @@
   bottom: 0;
   left: 0;
   right: 0;
+
+  @media (max-width: $mobile) {
+    background-color: #ffffff;
+  }
 }
 
 .more-catalog::after {
