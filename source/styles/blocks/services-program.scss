@@ -2,6 +2,7 @@
   background-color: $secondary-background-color;
   position: relative;
   padding: 80px;
+  margin-bottom: 20px;
 }
 
 .services-program__title {
@@ -43,38 +44,45 @@
 
 .services-program__link {
   @include secondary-font(16px, 16px, uppercase);
-  color: #000000;
-  position: relative;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
 
   @include clean-list;
   @include clean-text;
 
   @media (min-width: $tablet) {
-    column-gap: 25px;
     font-size: 20px;
+    gap: 25px;
+    line-height: 20px;
   }
 }
 
 .services-program__link::after {
-  position: absolute;
-  width: 50px;
-  height: 10px;
-  mask-image: url("../../icons/stack.svg#arrow");
-  mask-repeat: no-repeat;
-  background-color: currentColor;
   content: "";
-  transition: width 0.3s ease;
+  display: block;
+  width: 32px;
+  height: 12px;
+  background-image: url("../../icons/stack.svg#arrow");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -8px;
+  transition: all 0.3s linear;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
+
 .services-program__link:hover::after {
-  width: 80px;
+  background-position: -4;
 }
 
 .services-program__link::after:active {
-  top: 81px;
-  left: 67%;
-  width: 140px;
-  height: 194px;
+  opacity: 0.3;
 }
 
 .services__weight-loss::before {

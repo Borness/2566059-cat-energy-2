@@ -1,22 +1,23 @@
 .promo {
   @media (max-width: $mobile) {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 59%, #ffffff 41%), image-set("../images/promo-background@1x.jpg" 1x type("image/jpg"), "../images/promo-background@2x.jpg" 2x type("image/jpg"));
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 100%), image-set("../images/promo-background@1x.jpg" 1x type("image/jpg"), "../images/promo-background@2x.jpg" 2x type("image/jpg"));
     background-position: top;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop) {
     &::before {
+      content: "";
       position: absolute;
       top: 0;
+      left: 50%;
       display: block;
-      width: 100%;
+      min-width: 50%;
       min-height: 694px;
-      content: "";
       background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-background@1x.jpg"), linear-gradient(to bottom, #4f4f55 50%, #4f4f55 100%);
-      background-size: 50% 100%, 720px 694px, 50% 100%;
       background-position: right top;
       background-repeat: no-repeat;
+      background-size: 100%;
       z-index: -1;
     }
 

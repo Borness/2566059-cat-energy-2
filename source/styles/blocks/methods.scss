@@ -50,6 +50,14 @@
   line-height: 280px;
   color: #f2f2f2;
   z-index: -1;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .methods__item::before {
@@ -62,6 +70,11 @@
   background-position: 50%;
   background-repeat: no-repeat;
   margin-bottom: 31px;
+
+  @media (max-width: $mobile) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .methods__item--natural::before {
