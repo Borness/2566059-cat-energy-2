@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (navToggle && nav && navWrapper) {
     navToggle.addEventListener('click', () => {
-      if (!isMobile()) { return; }
+      if (!isMobile()) {
+        return;
+      }
       if (nav.classList.contains('main-navigation--opened')) {
         closeMenu();
       } else {
