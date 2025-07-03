@@ -1,6 +1,13 @@
 .more-catalog__title {
-  @include secondary-font(16px, 20px);
+  @include secondary-font(20px, 24px);
   color: $second-color-text;
+  text-align: center;
+  width: 85%;
+  margin: 0 15px;
+
+  @media (max-width: $mobile) {
+    width: 95%;
+  }
 }
 
 .more-catalog__button {
@@ -8,14 +15,20 @@
 }
 
 .more-catalog__info {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 100px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 25px;
+  }
 }
+
 
 .more-catalog__title::before {
   content: "";
   display: block;
-  width: 40px;
-  height: 30px;
+  height: 60px;
+  margin-bottom: 41px;
   background: url("../../icons/stack.svg#more");
 }

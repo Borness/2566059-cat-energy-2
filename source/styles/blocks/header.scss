@@ -1,4 +1,6 @@
 .main-header__wrapper {
+  position: relative;
+
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;

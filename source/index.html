@@ -112,18 +112,18 @@
           <div class="examples__slider slider">
             <div class="examples__slider-fat-cat">
               <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
                 <img class="slider__image slider__image--before" alt="Фотография кота до программы." src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256">
               </picture>
             </div>
             <div class="examples__slider-thin-cat">
               <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
                 <img class="slider__image slider__image--after" alt="Фотография кота после программы." src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256">
               </picture>
-            </div>
-            <div class="slider__range">
-              <button class="slider-main" type="button">
+              <button class="slider__range" type="button">
                 <span class="visually-hidden">Ползунок</span>
               </button>
             </div>
@@ -138,11 +138,7 @@
             <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           </div>
           <div class="contacts__map-wrapper">
-            <picture>
-              <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-              <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-              <img class="contacts__map" alt="Местоположение компании Cat Energy." src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362">
-            </picture>
+            <iframe class="contacts__map" src="https://www.google.com/maps?q=ул.+Большая+Конюшенная,+д.+19%2F8,+Санкт-Петербург&output=embed" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>

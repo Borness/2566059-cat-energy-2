@@ -49,34 +49,26 @@
 }
 
 .main-navigation__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
   width: 24px;
   height: 24px;
   border: 0;
-  background-color: $primary-background-color;
-  background-image: url("../../icons/stack.svg#close");
+  background-color: transparent;
+  background-image: url("../../icons/menu.svg");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     display: none;
   }
-
-  @media (min-width: $mobile) {
-    position: absolute;
-  }
 }
 
-.main-navigation__toggle--closed {
-  background-image: url("../../icons/stack.svg#menu");
-  width: 24px;
-  height: 24px;
-  border: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $primary-background-color;
-  position: absolute;
-  top: 15px;
-  right: 20px;
+.main-navigation__toggle.main-navigation__toggle--opened {
+  background-image: url("../../icons/close.svg");
 }
 
 .site-list__link--catalog {
@@ -89,7 +81,7 @@
 .logo {
   @media (max-width: $mobile) {
     justify-content: space-between;
-    width: calc(50% + 30px);
+    width: calc(50% + 250px);
   }
 }
 
@@ -106,8 +98,7 @@
   content: "";
   background-color: $primary-button-color;
   height: 2px;
-  position: absolute;
-  left: 175px;
+  left: 400px;
   right: 370px;
   bottom: -1px;
   display: block;
@@ -121,8 +112,46 @@
   content: "";
   background-color: $primary-button-color;
   height: 2px;
-  position: absolute;
-  left: 270px;
-  right: 180px;
-  bottom: -1px;
+  display: block;
+}
+
+@media (max-width: $mobile) {
+  .main-navigation__wrapper {
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100vw;
+    background: #ffffff;
+    z-index: 100;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .main-navigation__list {
+    display: none;
+    text-align: center;
+  }
+
+  .main-navigation--opened .main-navigation__list {
+    display: block;
+  }
+
+  .site-list__link {
+    display: block;
+    text-align: center;
+  }
+
+  .site-list__item--active::after,
+  .site-list__item--catalog-active::after {
+    display: none;
+  }
+}
+
+
+.site-list__item {
+  @media (max-width: $mobile) {
+    border-top: 1px solid #e6e6e6;
+  }
 }

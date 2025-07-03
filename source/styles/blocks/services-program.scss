@@ -3,28 +3,35 @@
   position: relative;
   padding: 80px;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet) {
+    margin-top: 20px;
+  }
 }
 
 .services-program__title {
   @include secondary-font(24px, 37px, uppercase);
   color: #000000;
-  margin: 0 0 0 60px;
+  margin: 0;
 
   @media (max-width: ($tablet - 1px)) {
     margin-bottom: 29px;
-    padding-left: 70px;
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 36px;
     line-height: 36px;
-    padding-left: 70px;
   }
 
   @media (min-width: $desktop) {
     margin-bottom: 50px;
     padding-left: 100px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 50px;
+    padding-left: 40px;
   }
 }
 
@@ -36,9 +43,10 @@
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 48px;
+    margin-bottom: 90px;
     font-size: 16px;
     line-height: 24px;
+    max-width: 700px;
   }
 }
 
@@ -87,50 +95,118 @@
 
 .services__weight-loss::before {
   content: "";
-  top: 40px;
-  left: 60px;
   display: block;
-  width: 100px;
-  height: 100px;
   background-color: $image-background-color;
   border-radius: 50%;
   position: absolute;
+
+  @media (min-width: ($tablet - 1px)) {
+    top: 15%;
+    left: 75%;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: ($desktop - 1px)) {
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    left: 60px;
+  }
+
+  @media (max-width: ($mobile)) {
+    width: 50px;
+    height: 50px;
+    top: 69px;
+    left: 65px;
+  }
 }
 
 .services__weight-loss::after {
   content: "";
   display: block;
-  top: 35px;
-  left: 65px;
-  width: 100px;
-  height: 100px;
   position: absolute;
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: ($tablet - 1px)) {
+    top: 15%;
+    left: 75%;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: ($desktop - 1px)) {
+    width: 100px;
+    height: 100px;
+    top: 35px;
+    left: 65px;
+  }
+
+  @media (max-width: ($mobile)) {
+    width: 50px;
+    height: 50px;
+    top: 65px;
+    left: 65px;
+  }
 }
 
 .services__weight-gain::before {
   content: "";
-  top: 40px;
-  left: 60px;
   display: block;
-  width: 100px;
-  height: 100px;
   background-color: $image-background-color;
   border-radius: 50%;
   position: absolute;
+
+  @media (min-width: ($tablet - 1px)) {
+    top: 15%;
+    left: 75%;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: ($desktop - 1px)) {
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    left: 60px;
+  }
+
+  @media (max-width: ($mobile)) {
+    width: 50px;
+    height: 50px;
+    top: 65px;
+    left: 65px;
+  }
 }
 
 .services__weight-gain::after {
   content: "";
   display: block;
-  top: 35px;
-  left: 45px;
-  width: 125px;
-  height: 100px;
   position: absolute;
   background-image: url("../../icons/stack.svg#cat-pro");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50%;
+
+  @media (min-width: ($tablet - 1px)) {
+    top: 15%;
+    left: 73%;
+    width: 230px;
+    height: 200px;
+  }
+
+  @media (min-width: ($desktop - 1px)) {
+    width: 125px;
+    height: 100px;
+    top: 35px;
+    left: 45px;
+  }
+
+  @media (max-width: ($mobile)) {
+    width: 60px;
+    height: 60px;
+    top: 65px;
+    left: 55px;
+  }
 }

@@ -1,20 +1,52 @@
 .subscribe__title {
   @include secondary-font(24px, 24px);
   color: $second-color-text;
-
+  position: relative;
+  background-color: #ffffff;
   margin-bottom: 32px;
 
   @media (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
     padding-left: 40px;
     font-size: 32px;
     line-height: 32px;
+    margin-right: 850px;
   }
 
   @media (min-width: $desktop) {
     font-size: 40px;
     line-height: 40px;
+    margin-right: 900px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile) {
+    margin-right: 200px;
   }
 }
+
+.subscribe__title::after {
+  content: "";
+  z-index: -1;
+  background-color: #68b738;
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  box-shadow: 100vw 0 #68b738;
+
+  @media (max-width: ($tablet - 1px)) {
+    box-shadow: -40px 0 0 0 #ffffff;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
 
 .subscribe-form__label {
   @include secondary-font(16px, 24px);

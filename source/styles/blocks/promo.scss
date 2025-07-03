@@ -3,6 +3,7 @@
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 100%), image-set("../images/promo-background@1x.jpg" 1x type("image/jpg"), "../images/promo-background@2x.jpg" 2x type("image/jpg"));
     background-position: top;
     background-repeat: no-repeat;
+    background-size: 100% 63%, 700px 320px, 100% 63%;
   }
 
   @media (min-width: $desktop) {
@@ -15,7 +16,7 @@
       min-width: 50%;
       min-height: 694px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-background@1x.jpg"), linear-gradient(to bottom, #4f4f55 50%, #4f4f55 100%);
-      background-position: right top;
+      background-position: 0 0;
       background-repeat: no-repeat;
       background-size: 100%;
       z-index: -1;

@@ -16,7 +16,14 @@
   position: relative;
   text-align: center;
   margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
 
+
+  @media (max-width: $mobile) {
+    top: -9px;
+    background-color: #eaeaea;
+  }
 
   @media (min-width: $tablet) {
     top: -8px;
