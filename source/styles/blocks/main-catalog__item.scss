@@ -38,3 +38,14 @@
     line-height: 16px;
   }
 }
+
+.main-catalog__image-card:hover,
+.main-catalog__image-card:focus {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.main-catalog__image-card:active {
+  opacity: 0.3;
+  transition: all 0.3s;
+}

@@ -127,6 +127,7 @@
 }
 
 .main-catalog__image-link {
-  display: flex;
-  width: 150px;
+  @media (max-width: $mobile) {
+    display: flex;
+  }
 }

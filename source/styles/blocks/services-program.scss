@@ -67,6 +67,10 @@
   }
 }
 
+.services-program__link:active {
+  opacity: 0.3;
+}
+
 .services-program__link::after {
   content: "";
   display: block;

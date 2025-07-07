@@ -72,6 +72,9 @@
   @include secondary-font(20px, 30px);
   color: $second-color-text;
   box-sizing: border-box;
+  border: none;
+  outline: 1px solid #e7e7e7;
+  padding: 13px;
 
   @media (max-width: calc($tablet - 1px)) {
     width: 100%;

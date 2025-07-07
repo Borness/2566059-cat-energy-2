@@ -50,7 +50,7 @@
 
 .main-navigation__toggle {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
   z-index: 10;
   width: 24px;
@@ -65,6 +65,14 @@
   @media (min-width: $tablet) {
     display: none;
   }
+}
+
+.main-navigation__toggle:hover {
+  opacity: 0.7;
+}
+
+.main-navigation__toggle--opened:hover {
+  opacity: 0.7;
 }
 
 .main-navigation__toggle.main-navigation__toggle--opened {
