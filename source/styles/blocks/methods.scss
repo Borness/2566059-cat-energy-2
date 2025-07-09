@@ -69,7 +69,6 @@
   background-color: $image-background-color;
   background-position: 50%;
   background-repeat: no-repeat;
-  margin-bottom: 31px;
 
   @media (max-width: $mobile) {
     width: 60px;
@@ -103,11 +102,13 @@
   }
 
   @media (min-width: $tablet) {
-    margin: 0 105px 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 30px 46px;
   }
 
   @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
+    border-bottom: 1px solid #ffffff;
   }
 }

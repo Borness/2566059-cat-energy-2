@@ -4,22 +4,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media (min-width: $mobile) {
-    width: 100%;
-    height: 250px;
-  }
 
   @media (min-width: $tablet) {
     width: 100%;
-    height: 250px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 99%, #ffffff 1%), image-set("../images/catalog-background-tablet@1x.jpg" 1x type("image/jpg"), "../images/promo-info-background@2x.jpg" 2x type("image/jpg"));
   }
 
   @media (min-width: $desktop) {
-    margin-left: 80%;
-    width: 12%;
-    height: 300px;
+    width: 245px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 99%, #ffffff 1%), image-set("../images/promo-info-background_tablet@1x.jpg" 1x type("image/jpg"), "../images/promo-info-background@2x.jpg" 2x type("image/jpg"));
+  }
+
+  @media (max-width: $mobile) {
+    margin: 20px;
+    padding: 59px 50px 43px;
   }
 }
+
 
 .promo-gift__info::before {
   content: "";

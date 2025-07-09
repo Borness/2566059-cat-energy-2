@@ -6,10 +6,11 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
-    padding-left: 40px;
     font-size: 32px;
     line-height: 32px;
-    margin-right: 850px;
+    text-align: center;
+    width: 290px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop) {
@@ -20,7 +21,9 @@
   }
 
   @media (max-width: $mobile) {
-    margin-right: 200px;
+    width: fit-content;
+    box-shadow: -40px 0 #ffffff;
+    padding-right: 20px;
   }
 }
 
@@ -38,6 +41,10 @@
 
   @media (max-width: ($tablet - 1px)) {
     box-shadow: -40px 0 0 0 #ffffff;
+  }
+
+  @media (max-width: ($mobile)) {
+    box-shadow: 100vw 0 #68b738;
   }
 
   @media (min-width: $tablet) {
@@ -112,12 +119,12 @@
 .subscribe__container {
   width: 100%;
   max-width: 1220px;
-  margin: 96px auto 104px;
+  margin: 70px auto 104px;
   box-sizing: border-box;
   padding: 40px 20px;
 
   @media (min-width: $tablet) {
-    padding: 80px 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop) {

@@ -6,7 +6,19 @@
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  padding: 14px 55px 25px;
+  padding: 14px 15px;
+
+  @media (max-width: $mobile) {
+    width: 124px;
+    min-height: 56px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 162px;
+    min-height: 72px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .statistics__description {
@@ -23,11 +35,14 @@
   @media (max-width: $mobile) {
     top: -9px;
     background-color: #eaeaea;
+    width: min-content;
+    padding: 0 20px;
   }
 
   @media (min-width: $tablet) {
     top: -8px;
     background-color: #ffffff;
+    width: auto;
   }
 
   @media (min-width: $desktop) {

@@ -22,7 +22,7 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: flex-end;
-    gap: 10px 33px;
+    gap: 10px 31px;
     flex-wrap: wrap;
   }
 }
@@ -89,7 +89,7 @@
 .logo {
   @media (max-width: $mobile) {
     justify-content: space-between;
-    width: calc(50% + 250px);
+    width: calc(100% - 44px);
   }
 }
 

@@ -1,9 +1,9 @@
 .promo {
   @media (max-width: $mobile) {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 100%), image-set("../images/promo-background@1x.jpg" 1x type("image/jpg"), "../images/promo-background@2x.jpg" 2x type("image/jpg"));
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 100%), image-set("../images/promo-background@1x.jpg" 1x type("image/jpeg"), "../images/promo-background@2x.jpg" 2x type("image/jepg"));
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 100% 63%, 700px 320px, 100% 63%;
+    background-size: 100% 63%, auto 320px, 100% 63%;
   }
 
   @media (min-width: $desktop) {

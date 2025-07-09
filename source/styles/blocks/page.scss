@@ -5,4 +5,5 @@
 .page__body {
   @include primary-font(14px, 18px);
   color: #444444;
+  margin: 0;
 }

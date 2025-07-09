@@ -5,27 +5,18 @@
   position: relative;
   background-color: #ffffff;
 
+  @media (min-width: $tablet) {
+    text-align: center;
+    width: 420px;
+    font-size: 40px;
+    line-height: 32px;
+  }
 
   @media (max-width: $mobile) {
     margin-left: 7px;
-    margin-right: 100px;
-  }
-
-  @media (min-width: $tablet) {
-    margin-right: 200px;
-    font-size: 40px;
-    line-height: 32px;
-    width: 500px;
-    text-align: center;
-  }
-
-  @media (min-width: $desktop) {
-    margin-right: 220px;
-    margin-left: 200px;
-    font-size: 40px;
-    line-height: 32px;
-    width: 500px;
-    text-align: center;
+    width: fit-content;
+    box-shadow: -40px 0 #ffffff;
+    padding-right: 20px;
   }
 }
 
@@ -43,6 +34,10 @@
 
   @media (max-width: ($tablet - 1px)) {
     box-shadow: -40px 0 0 0 #ffffff;
+  }
+
+  @media (max-width: ($mobile)) {
+    box-shadow: 100vw 0 #68b738;
   }
 
   @media (min-width: $tablet) {
@@ -86,7 +81,7 @@
   @media (max-width: ($tablet - 1px)) {
     padding-top: 12px;
     padding-bottom: 18px;
-    padding-right: 20px;
+    margin-right: 20px;
   }
 
   @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
@@ -105,7 +100,6 @@
     flex-wrap: wrap;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 65%;
   }
 }
 
@@ -121,14 +115,11 @@
 
   @media (min-width: $desktop) {
     flex-grow: 1;
-    padding-left: 350px;
-    padding-top: 50px;
+    margin-right: 80px;
   }
 
-  @media (min-width: $tablet) {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: 600px;
+  @media (max-width: $mobile) {
+    padding-left: 20px;
   }
 }
 
@@ -164,22 +155,43 @@
   }
 }
 
-.promo-gift {
-  @media (min-width: $desktop) {
-    margin-left: 1900px;
-    margin-top: -310px;
-  }
-}
-
 .additional-products__price {
-  width: 170px;
+  width: 130px;
   text-align: right;
   font-size: 16px;
   line-height: 20px;
 }
 
 .additional-products__weight {
-  width: 150px;
+  width: 131px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.additional-products__container {
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: wrap;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 0 96px;
+    display: flex;
+  }
+}
+
+.additional-product__wrapper {
+  @media (max-width: $mobile) {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
 }

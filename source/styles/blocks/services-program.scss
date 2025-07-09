@@ -1,11 +1,15 @@
 .services-program {
   background-color: $secondary-background-color;
   position: relative;
-  padding: 80px;
   margin-bottom: 20px;
+  margin-top: 20px;
 
-  @media (max-width: $tablet) {
-    margin-top: 20px;
+  @media (max-width: $mobile) {
+    padding: 30px 20px 18px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 77px 45% 53px 53px;
   }
 }
 
@@ -31,7 +35,7 @@
 
   @media (max-width: $mobile) {
     margin-bottom: 50px;
-    padding-left: 40px;
+    padding-left: 65px;
   }
 }
 
@@ -47,6 +51,19 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 700px;
+  }
+}
+
+
+.services-program__description::after {
+  @media (max-width: $mobile) {
+    content: "";
+    background-color: #d9d9d9;
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    bottom: 55px;
+    left: 20px;
   }
 }
 
@@ -105,8 +122,8 @@
   position: absolute;
 
   @media (min-width: ($tablet - 1px)) {
-    top: 15%;
-    left: 75%;
+    top: 92px;
+    right: 63px;
     width: 200px;
     height: 200px;
   }
@@ -121,8 +138,8 @@
   @media (max-width: ($mobile)) {
     width: 50px;
     height: 50px;
-    top: 69px;
-    left: 65px;
+    top: 20px;
+    left: 20px;
   }
 }
 
@@ -135,8 +152,8 @@
   background-position: center;
 
   @media (min-width: ($tablet - 1px)) {
-    top: 15%;
-    left: 75%;
+    top: 80px;
+    right: 63px;
     width: 200px;
     height: 200px;
   }
@@ -151,8 +168,8 @@
   @media (max-width: ($mobile)) {
     width: 50px;
     height: 50px;
-    top: 65px;
-    left: 65px;
+    top: 20px;
+    left: 20px;
   }
 }
 
@@ -164,8 +181,8 @@
   position: absolute;
 
   @media (min-width: ($tablet - 1px)) {
-    top: 15%;
-    left: 75%;
+    top: 92px;
+    right: 63px;
     width: 200px;
     height: 200px;
   }
@@ -180,8 +197,8 @@
   @media (max-width: ($mobile)) {
     width: 50px;
     height: 50px;
-    top: 65px;
-    left: 65px;
+    top: 20px;
+    left: 20px;
   }
 }
 
@@ -194,9 +211,9 @@
   background-position: 50%;
 
   @media (min-width: ($tablet - 1px)) {
-    top: 15%;
-    left: 73%;
-    width: 230px;
+    top: 92px;
+    right: 30px;
+    width: 270px;
     height: 200px;
   }
 
@@ -210,7 +227,7 @@
   @media (max-width: ($mobile)) {
     width: 60px;
     height: 60px;
-    top: 65px;
-    left: 55px;
+    top: 20px;
+    left: 15px;
   }
 }
