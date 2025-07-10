@@ -15,7 +15,7 @@
       display: block;
       min-width: 50%;
       min-height: 694px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-background@1x.jpg"), linear-gradient(to bottom, #4f4f55 50%, #4f4f55 100%);
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-background@1x.jpg"), linear-gradient(to bottom, #343441 50%, #343441 100%);
       background-position: 0 0;
       background-repeat: no-repeat;
       z-index: -1;
@@ -23,7 +23,7 @@
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-background@1x.jpg"), linear-gradient(to bottom, #4f4f55 50%, #4f4f55 100%);
+        background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/promo-background@1x.jpg"), linear-gradient(to bottom, #343441 50%, #343441 100%);
       }
     }
   }
