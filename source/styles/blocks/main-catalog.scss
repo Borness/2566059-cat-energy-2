@@ -133,6 +133,7 @@
 .main-catalog__item {
   @media (min-width: $tablet) {
     position: relative;
+    padding: 10px 37px 40px;
   }
 
   @media (min-width: $desktop) {
@@ -167,7 +168,7 @@
   }
 
   @media (min-width: $tablet) {
-    height: 370px;
+    height: 410px;
   }
 
   @media (min-width: $desktop) {

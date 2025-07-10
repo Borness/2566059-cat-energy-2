@@ -22,6 +22,11 @@
     line-height: 30px;
     text-align: center;
     margin: 0 auto 19px;
+    width: 65%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
   }
 }
 

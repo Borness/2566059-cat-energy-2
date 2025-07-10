@@ -244,4 +244,9 @@
 
 .examples__price-value {
   margin-left: 63px;
+
+  @media (max-width: $mobile) {
+    position: relative;
+    margin-left: 0;
+  }
 }
