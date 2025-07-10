@@ -47,3 +47,14 @@
   opacity: 0.3;
   transition: all 0.3s;
 }
+
+.main-catalog__item-title:hover,
+.main-catalog__item-title:focus {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.main-catalog__item-title:active {
+  opacity: 0.3;
+  transition: all 0.3s;
+}
