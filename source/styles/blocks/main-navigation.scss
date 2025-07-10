@@ -124,11 +124,19 @@
 }
 
 @media (max-width: $mobile) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   .main-navigation__wrapper {
-    display: block;
-    position: absolute;
-    top: 38px;
+    position: fixed;
+    top: 66px;
     left: 0;
+    right: 0;
     width: 100vw;
     background: #ffffff;
     z-index: 100;
@@ -140,6 +148,8 @@
   .main-navigation__list {
     display: none;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .main-navigation--opened .main-navigation__list {
@@ -149,6 +159,8 @@
   .site-list__link {
     display: block;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .site-list__item--active::after,
