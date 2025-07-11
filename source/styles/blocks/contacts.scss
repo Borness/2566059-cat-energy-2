@@ -12,13 +12,21 @@
   line-height: 20px;
   font-style: normal;
   color: $any-color-text;
-  text-align: left;
 
   @media (min-width: $tablet) {
+    width: 173px;
+    font-size: 16px;
+    padding-top: 17px;
+    padding-left: 6px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
     width: 163px;
     font-size: 16px;
     padding-top: 17px;
     padding-left: 6px;
+    text-align: left;
   }
 }
 
@@ -29,6 +37,7 @@
 
   @media (min-width: $tablet) {
     width: 100%;
+    min-height: 394px;
   }
 
   @media (min-width: $desktop) {
@@ -86,7 +95,7 @@
   @media (min-width: $tablet) {
     min-height: 80px;
     column-gap: 300px;
-    padding: 60px 70px;
+    padding: 48px 70px;
   }
 
   @media (min-width: $desktop) {
@@ -111,5 +120,12 @@
 .contacts__city {
   display: block;
   margin-top: 20px;
-  text-align: left;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }

@@ -24,9 +24,17 @@
   }
 
   @media (min-width: $tablet) {
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop) {
     margin-bottom: 146px;
     font-size: 60px;
     line-height: 60px;
+    margin-top: 50px;
   }
 }
 
@@ -39,12 +47,15 @@
 
 
   @media (min-width: $tablet) {
-    text-align: right;
+    margin-left: 50px;
     gap: 0;
-    margin-top: -90px;
-    padding-left: 75%;
-    display: block;
+    margin-top: -80px;
     padding-bottom: 85px;
+    padding-left: 70%;
+    display: block;
+    font-size: 20px;
+    min-width: 708px;
+    line-height: 28px;
   }
 
   @media (min-width: $desktop) {
@@ -52,6 +63,9 @@
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 0;
+    line-height: 20px;
+    font-size: 21px;
   }
 
   @media (max-width: $mobile) {
@@ -75,15 +89,19 @@
   }
 
   @media (min-width: $tablet) {
-    min-height: 72px;
     margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
+    min-width: 708px;
   }
 
   @media (min-width: $desktop) {
     max-width: 436px;
     margin-bottom: 69px;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 72px;
+    min-width: 100px;
   }
 }
 
@@ -108,6 +126,13 @@
     gap: 43px;
     margin: 0;
   }
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    display: flex;
+    gap: 43px;
+    margin: 0;
+  }
 }
 
 
@@ -115,7 +140,7 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    background-image: linear-gradient(#ffffff 65%, #eaeaea 1%);
+    background-image: linear-gradient(0deg, #eaeaea 456px, #ffffff 456px 100%);
   }
 
   @media (min-width: $desktop) {
@@ -132,13 +157,15 @@
   @media (min-width: $tablet) {
     width: 560px;
     margin: auto;
+    top: 6px;
+    left: 7px;
   }
-
 
   @media (min-width: $desktop) {
     position: absolute;
     top: 0;
     right: 102px;
+    left: auto;
   }
 
   @media (max-width: $mobile) {
@@ -251,5 +278,9 @@
   @media (max-width: $mobile) {
     position: relative;
     margin-left: 0;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: 84px;
   }
 }

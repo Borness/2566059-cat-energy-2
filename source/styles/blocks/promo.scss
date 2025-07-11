@@ -39,9 +39,9 @@
   }
 
   @media (min-width: $tablet) {
-    width: 708px;
+    width: 694px;
     margin: 0 auto;
-    padding: 61px 0 526px;
+    padding: 15px 0 526px;
   }
 
   @media (min-width: $desktop) {
@@ -111,6 +111,7 @@
     position: absolute;
     bottom: -1px;
     z-index: -1;
+    top: 266px;
   }
 
   @media (min-width: $desktop) {
