@@ -110,7 +110,7 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 63px;
+    gap: 68px 80px;
   }
 }
 
@@ -125,7 +125,7 @@
 
   @media (min-width: $desktop) {
     width: 1220px;
-    margin: 74px auto 71px;
+    margin: 74px auto 40px;
     padding: 0;
   }
 }
@@ -138,10 +138,10 @@
 
   @media (min-width: $desktop) {
     max-height: 510px;
-    display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 10px 37px 40px;
+    padding: 10px 40px 40px;
+    max-width: 245px;
   }
 
   @media (max-width: $mobile) {
@@ -172,7 +172,7 @@
   }
 
   @media (min-width: $desktop) {
-    height: 410px;
+    height: 425px;
   }
 }
 

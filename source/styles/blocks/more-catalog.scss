@@ -22,6 +22,11 @@
   @media (max-width: $mobile) {
     margin-bottom: 25px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 92px;
+    margin-top: 22px;
+  }
 }
 
 

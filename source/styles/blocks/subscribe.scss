@@ -14,10 +14,10 @@
   }
 
   @media (min-width: $desktop) {
+    margin-right: 924px;
     font-size: 40px;
     line-height: 40px;
-    margin-right: 900px;
-    text-align: center;
+    margin-bottom: 74px;
   }
 
   @media (max-width: $mobile) {
@@ -72,6 +72,7 @@
 
   @media (min-width: $desktop) {
     width: 1220px;
+    margin-bottom: 5px;
   }
 }
 
@@ -95,6 +96,7 @@
 
   @media (min-width: $desktop) {
     width: 500px;
+    padding-left: 17px;
   }
 }
 
@@ -128,6 +130,7 @@
   }
 
   @media (min-width: $desktop) {
+    margin: 73px auto 113px;
     padding: 0;
   }
 }

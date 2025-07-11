@@ -5,8 +5,14 @@
   position: relative;
   background-color: #ffffff;
 
+  @media (min-width: $desktop) {
+    width: 420px;
+    font-size: 40px;
+    line-height: 32px;
+    margin-bottom: 71px;
+  }
+
   @media (min-width: $tablet) {
-    text-align: center;
     width: 420px;
     font-size: 40px;
     line-height: 32px;
@@ -101,7 +107,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
   }
 }
 
@@ -118,6 +124,7 @@
   @media (min-width: $desktop) {
     flex-grow: 1;
     margin-right: 80px;
+    padding-left: 0;
   }
 
   @media (max-width: $mobile) {
@@ -159,9 +166,15 @@
 
 .additional-products__price {
   width: 140px;
-  text-align: right;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $desktop) {
+    width: 155px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 114px;
+  }
 }
 
 .additional-products__weight {
@@ -179,7 +192,7 @@
     flex-wrap: wrap;
     width: 1220px;
     margin: 0 auto;
-    padding: 0 0 96px;
+    padding: 0 0 6px;
     display: flex;
   }
 }
