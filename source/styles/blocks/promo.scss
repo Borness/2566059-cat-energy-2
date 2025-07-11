@@ -3,7 +3,7 @@
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, #ffffff 100%), image-set("../images/promo-background@1x.jpg" 1x type("image/jpeg"), "../images/promo-background@2x.jpg" 2x type("image/jepg"));
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 100% 63%, auto 320px, 100% 63%;
+    background-size: 100% 63%, auto 300px, 100% 63%;
   }
 
   @media (min-width: $desktop) {
@@ -73,6 +73,7 @@
 
   @media (max-width: $mobile) {
     color: #ffffff;
+    margin-top: 0;
   }
 }
 
@@ -99,7 +100,7 @@
 
   @media (max-width: $mobile) {
     color: #ffffff;
-    margin-bottom: 29px;
+    margin-bottom: 33px;
   }
 }
 

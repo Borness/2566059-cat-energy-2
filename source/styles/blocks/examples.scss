@@ -1,6 +1,6 @@
 .examples__container {
   @media (max-width: calc($tablet - 1px)) {
-    padding: 25px 20px 40px;
+    padding: 21px 20px 40px;
   }
 
   @media (min-width: $tablet) {
@@ -72,6 +72,8 @@
     display: block;
     text-align: center;
     font-size: 14px;
+    line-height: 12px;
+    margin-bottom: 25px;
   }
 }
 
@@ -120,6 +122,13 @@
 
 
 .examples__statistics-list {
+  @media (max-width: $mobile) {
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+  }
+
   @media (min-width: $desktop) {
     padding: 0;
     display: flex;
@@ -273,14 +282,16 @@
 }
 
 .examples__price-value {
-  margin-left: 56px;
-
   @media (max-width: $mobile) {
     position: relative;
     margin-left: 0;
   }
 
-  @media (max-width: $tablet) {
+  @media (min-width: $tablet) {
     margin-left: 84px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 56px;
   }
 }

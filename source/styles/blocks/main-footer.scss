@@ -2,7 +2,8 @@
   background-color: $secondary-background-color;
 
   @media (max-width: calc($tablet - 1px)) {
-    padding: 40px 20px;
+    padding: 0 20px;
+    min-height: 240px;
   }
 
   @media (min-width: $tablet) {

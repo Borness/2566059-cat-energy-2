@@ -2,6 +2,10 @@
   @include secondary-font(16px, 20px, uppercase);
   color: $second-color-text;
 
+  @media (max-width: $mobile) {
+    margin-top: 0;
+  }
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 26px;
@@ -89,7 +93,7 @@
 
   @media (max-width: ($tablet - 1px)) {
     min-height: 60px;
-    padding: 26px 20px;
+    padding: 26px 20px 0;
   }
 
   @media (min-width: $tablet) {
@@ -120,6 +124,12 @@
 .contacts__city {
   display: block;
   margin-top: 20px;
+
+
+  @media (max-width: $mobile) {
+    text-align: left;
+    margin-top: 0;
+  }
 
   @media (min-width: $tablet) {
     text-align: right;

@@ -37,11 +37,22 @@
 
 
 .logo-text {
+  @media (max-width: $mobile) {
+    margin-left: 42px;
+  }
+
   @media (min-width: $tablet) {
     width: 100px;
   }
 
   @media (min-width: $desktop) {
     width: 118px;
+  }
+}
+
+.logo-text__image-footer {
+  @media (max-width: $mobile) {
+    padding-bottom: 18px;
+    margin-top: 2px;
   }
 }
