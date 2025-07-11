@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 62px 52px;
   }
 }
 
@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 90px;
+    margin-bottom: 35px;
     font-size: 16px;
     line-height: 24px;
     max-width: 700px;
@@ -83,7 +83,7 @@
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    gap: 25px;
+    gap: 31px;
     line-height: 20px;
   }
 }
@@ -95,7 +95,7 @@
 .services-program__link::after {
   content: "";
   display: block;
-  width: 32px;
+  width: 33px;
   height: 12px;
   background-image: url("../../icons/stack.svg#arrow");
   background-size: cover;
@@ -135,8 +135,8 @@
   @media (min-width: ($desktop - 1px)) {
     width: 100px;
     height: 100px;
-    top: 40px;
-    left: 60px;
+    top: 49px;
+    left: 54px;
   }
 
   @media (max-width: ($mobile)) {
@@ -163,10 +163,10 @@
   }
 
   @media (min-width: ($desktop - 1px)) {
-    width: 100px;
+    width: 96px;
     height: 100px;
-    top: 35px;
-    left: 65px;
+    top: 41px;
+    left: 54px;
   }
 
   @media (max-width: ($mobile)) {
@@ -194,8 +194,8 @@
   @media (min-width: ($desktop - 1px)) {
     width: 100px;
     height: 100px;
-    top: 40px;
-    left: 60px;
+    top: 49px;
+    left: 54px;
   }
 
   @media (max-width: ($mobile)) {
@@ -222,10 +222,10 @@
   }
 
   @media (min-width: ($desktop - 1px)) {
-    width: 125px;
+    width: 133px;
     height: 100px;
-    top: 35px;
-    left: 45px;
+    top: 45px;
+    left: 34px;
   }
 
   @media (max-width: ($mobile)) {

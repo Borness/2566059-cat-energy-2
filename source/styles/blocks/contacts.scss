@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet) {
     font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -11,15 +12,18 @@
   line-height: 20px;
   font-style: normal;
   color: $any-color-text;
-  text-align: right;
+  text-align: left;
 
   @media (min-width: $tablet) {
+    width: 163px;
     font-size: 16px;
+    padding-top: 17px;
+    padding-left: 6px;
   }
 }
 
 .contacts__map {
-  min-height: 362px;
+  min-height: 390px;
   border: none;
   display: block;
 
@@ -86,19 +90,26 @@
   }
 
   @media (min-width: $desktop) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    align-self: center;
-    width: 565px;
-    column-gap: 90px;
-    padding: 60px 80px;
-    background-color: #ffffff;
     box-sizing: border-box;
     z-index: 1;
+    background-color: #ffffff;
+    grid-area: 2 / 2 / 2 / 2;
+    align-self: center;
+    column-gap: 90px;
+    width: 565px;
+    padding: 32px 81px;
+    height: 190px;
   }
 }
 
 
 .contacts--dark {
   background-color: #f2f2f2;
+}
+
+
+.contacts__city {
+  display: block;
+  margin-top: 20px;
+  text-align: left;
 }

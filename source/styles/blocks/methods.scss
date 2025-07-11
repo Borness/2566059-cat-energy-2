@@ -1,6 +1,12 @@
 .methods__title {
   @include secondary-font(36px, 40px);
   color: #000000;
+
+  @media (min-width: $desktop) {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 26px;
+  }
 }
 
 .methods__list {
@@ -16,7 +22,7 @@
   }
 
   @media (min-width: $desktop) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 324px 325px 325px 246px;
   }
 }
 
@@ -37,6 +43,10 @@
     font-size: 16px;
     line-height: 24px;
     counter-increment: methods__item 1;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
   }
 }
 
@@ -69,6 +79,7 @@
   background-color: $image-background-color;
   background-position: 50%;
   background-repeat: no-repeat;
+  margin-bottom: 30px;
 
   @media (max-width: $mobile) {
     width: 60px;

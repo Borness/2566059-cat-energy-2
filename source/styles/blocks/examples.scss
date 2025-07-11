@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop) {
     width: 1220px;
-    margin: 69px auto 0;
+    margin: -26px auto 0;
     padding: 0;
   }
 }
@@ -24,15 +24,15 @@
   }
 
   @media (min-width: $tablet) {
+    margin-bottom: 146px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 150px;
   }
 }
 
 
 .examples__price {
-  @include secondary-font(20px, 20px, uppercase);
+  @include secondary-font(21px, 20px, uppercase);
   color: $second-color-text;
   display: flex;
   gap: 150px;
@@ -102,9 +102,12 @@
 
 
 .examples__statistics-list {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
+  @media (min-width: $desktop) {
+    padding: 0;
+    display: flex;
+    gap: 43px;
+    margin: 0;
+  }
 }
 
 
@@ -116,7 +119,7 @@
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient(#ffffff 25%, #eaeaea 1%);
+    background-image: linear-gradient(#ffffff 136px, #eaeaea 136px 100%);
   }
 
   @media (max-width: $mobile) {
@@ -134,8 +137,8 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: 50px;
-    right: 250px;
+    top: 0;
+    right: 102px;
   }
 
   @media (max-width: $mobile) {
@@ -243,7 +246,7 @@
 }
 
 .examples__price-value {
-  margin-left: 63px;
+  margin-left: 56px;
 
   @media (max-width: $mobile) {
     position: relative;
