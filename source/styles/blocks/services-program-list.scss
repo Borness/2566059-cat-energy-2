@@ -1,0 +1,13 @@
+.services-program-list {
+  @include clean-list;
+  @include clean-text;
+
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

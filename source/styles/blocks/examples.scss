@@ -157,7 +157,7 @@
   }
 
   @media (max-width: $mobile) {
-    background-image: linear-gradient(#ffffff 5%, #eaeaea 1%);
+    background-image: linear-gradient(#ffffff 4%, #eaeaea 1%);
   }
 }
 
@@ -183,25 +183,6 @@
   }
 }
 
-
-.slider {
-  display: grid;
-  grid-template-columns: 50% 50%;
-
-  @media (max-width: $mobile) {
-    position: relative;
-  }
-
-  @media (min-width: $tablet) {
-    position: relative;
-  }
-
-  @media (min-width: $desktop) {
-    position: absolute;
-  }
-}
-
-
 .examples__slider-fat-cat {
   overflow: hidden;
 }
@@ -209,76 +190,6 @@
 
 .examples__slider-thin-cat {
   overflow: hidden;
-}
-
-
-.slider__image {
-  display: block;
-  max-width: inherit;
-
-
-  &--after {
-    transform: translate(-50%);
-  }
-}
-
-
-.slider__range {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  padding: 0;
-  color: #666666;
-  background-color: currentColor;
-  border-radius: 2px;
-  border: none;
-  transform: translateX(-50%);
-  transition: 0.3s;
-
-  @media (min-width: $desktop) {
-    top: 0;
-  }
-}
-
-.slider__range:hover,
-.slider__range:focus {
-  color: #68b738;
-}
-
-
-.slider__range:active {
-  opacity: 0.6;
-}
-
-.slider__range::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  mask-image: url("../../icons/stack.svg#slider-icon");
-  mask-size: 24px 18px;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  background-color: currentColor;
-  transform: translateX(-50%) translateY(-50%);
-  cursor: grab;
-  content: "";
-}
-
-.slider__range::before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  content: "";
 }
 
 .examples__price-value {

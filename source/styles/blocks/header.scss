@@ -14,29 +14,6 @@
   }
 }
 
-.main-navigation {
-  @media (min-width: $tablet) {
-    width: 65%;
-  }
-
-  @media (min-width: $desktop) {
-    width: 50%;
-  }
-}
-
-
-.logo-text:active {
-  opacity: 0.6;
-}
-
-.main-navigation__list {
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 10px 33px;
-  display: flex;
-}
-
-
 .main-header {
   margin: 15px;
 

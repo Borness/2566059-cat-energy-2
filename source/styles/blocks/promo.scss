@@ -121,3 +121,34 @@
     z-index: 1;
   }
 }
+
+.promo__button {
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: calc($tablet - 1px)) {
+    padding: 10px 50px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 242px;
+    margin-left: 90px;
+    padding: 14px 25px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 246px;
+    margin-bottom: 1px;
+    margin-left: 80px;
+    padding: 14px 25px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+    text-align: center;
+  }
+}

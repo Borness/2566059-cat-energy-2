@@ -1,0 +1,35 @@
+.logo-text:hover,
+.logo-text:focus {
+  opacity: 0.8;
+}
+
+.logo-text:active {
+  opacity: 0.6;
+}
+
+
+.logo-text__image {
+  margin-bottom: 20px;
+}
+
+
+.logo-text {
+  @media (max-width: $mobile) {
+    margin-left: 42px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 118px;
+  }
+}
+
+.logo-text__image-footer {
+  @media (max-width: $mobile) {
+    padding-bottom: 18px;
+    margin-top: 2px;
+  }
+}

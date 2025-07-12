@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -56,6 +58,9 @@
           <p class="promo__description">Занялся собой? Займись котом!</p>
           <div class="promo__image">
             <picture>
+              <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/index-eat-desktop@1x.webp 1x, images/index-eat-desktop@2x.webp 2x">
+              <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/index-eat-tablet@1x.webp 1x, images/index-eat-tablet@2x.webp 2x">
+              <source width="280" height="270" type="image/webp" srcset="images/index-eat-mobile@1x.webp 1x, images/index-eat-mobile@2x.webp 2x">
               <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-eat-desktop@1x.png 1x, images/index-eat-desktop@2x.png 2x">
               <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-eat-tablet@1x.png 1x, images/index-eat-tablet@2x.png 2x">
               <img class="promo__image-pic" alt="Баночка кошачьего питания Cat Energy." src="images/index-eat-mobile@1x.png" srcset="images/index-eat-mobile@2x.png 2x" width="280" height="270">
@@ -65,7 +70,7 @@
         </div>
       </section>
       <section class="services">
-        <div class="services-container">
+        <div class="services__container">
           <h2 class="visually-hidden">Виды программ для котов</h2>
           <ul class="services-program-list">
             <li class="services__weight-loss services-program">
@@ -112,6 +117,8 @@
           <div class="examples__slider slider">
             <div class="examples__slider-fat-cat">
               <picture>
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet-desktop@1x.webp 1x, images/cat-before-tablet-desktop@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
                 <img class="slider__image slider__image--before" alt="Фотография кота до программы." src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256">
@@ -119,6 +126,8 @@
             </div>
             <div class="examples__slider-thin-cat">
               <picture>
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet-desktop@1x.webp 1x, images/cat-after-tablet-desktop@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
                 <img class="slider__image slider__image--after" alt="Фотография кота после программы." src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256">

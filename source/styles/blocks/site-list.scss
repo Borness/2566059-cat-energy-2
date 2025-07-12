@@ -1,9 +1,142 @@
 .site-list {
   @include clean-list;
+
+  @media (max-width: calc($tablet - 1px)) {
+    &--opened {
+      position: absolute;
+      display: block;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 13px 34px;
+    padding-top: 3px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 34px;
+    padding-top: 8px;
+    display: flex;
+  }
 }
 
 .site-list__link {
   @include secondary-font(20px, 20px, uppercase);
   color: #000000;
   text-decoration: none;
+  display: block;
+
+  @media (max-width: calc($tablet - 1px)) {
+    padding: 22px 20px 24px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 12px 0;
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    color: #ffffff;
+    padding: 12px 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.site-list__link--catalog {
+  @media (min-width: $desktop) {
+    color: #000000;
+  }
+}
+
+.site-list__item:hover,
+.site-list__item:focus {
+  opacity: 0.6;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
+}
+
+.site-list__item--active::after {
+  content: "";
+  background-color: $primary-button-color;
+  height: 2px;
+  left: 400px;
+  right: 370px;
+  bottom: -1px;
+  display: block;
+
+  @media (min-width: $desktop) {
+    background-color: #ffffff;
+  }
+}
+
+.site-list__item--catalog-active::after {
+  content: "";
+  background-color: $primary-button-color;
+  height: 2px;
+  display: block;
+}
+
+@media (max-width: $mobile) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .main-navigation__wrapper {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #ffffff;
+    z-index: 100;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .main-navigation__list {
+    display: none;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-navigation--opened .main-navigation__list {
+    display: block;
+  }
+
+  .site-list__link {
+    display: block;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-list__item--active::after,
+  .site-list__item--catalog-active::after {
+    display: none;
+  }
+}
+
+
+.site-list__item {
+  @media (max-width: $mobile) {
+    border-top: 1px solid #e6e6e6;
+  }
 }

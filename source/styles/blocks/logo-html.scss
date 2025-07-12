@@ -3,12 +3,6 @@
   @include clean-text;
 }
 
-.logo-html__text {
-  color: $any-color-text;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 .logo-html::after {
   display: block;
   content: "";
@@ -30,4 +24,13 @@
 
 .logo-html__text:active {
   opacity: 0.3;
+}
+
+.logo-html__text {
+  margin: 0;
+  padding: 0;
+  padding-right: 23px;
+  color: $any-color-text;
+  font-size: 16px;
+  line-height: 20px;
 }

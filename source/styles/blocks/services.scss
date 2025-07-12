@@ -1,17 +1,3 @@
-.services-program-list {
-  @include clean-list;
-  @include clean-text;
-
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-  }
-}
-
 .services__item {
   @media (max-width: calc($tablet - 1px)) {
     min-height: 266px;
@@ -26,7 +12,7 @@
   }
 }
 
-.services-container {
+.services__container {
   @media (max-width: calc($tablet - 1px)) {
     margin: 0 20px 20px;
     padding-top: 20px;
@@ -40,5 +26,165 @@
     width: 1220px;
     margin: 0 auto 71px;
     padding: 0;
+  }
+}
+
+.services__weight-loss::before {
+  content: "";
+  display: block;
+  background-color: $image-background-color;
+  border-radius: 50%;
+  position: absolute;
+
+  @media (min-width: ($tablet - 1px)) {
+    top: 92px;
+    right: 63px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: ($desktop - 1px)) {
+    width: 100px;
+    height: 100px;
+    top: 49px;
+    left: 54px;
+  }
+
+  @media (max-width: ($mobile)) {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.services__weight-loss::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: ($tablet - 1px)) {
+    width: 200px;
+    height: 195px;
+    top: 81px;
+    right: 63px;
+  }
+
+  @media (min-width: ($desktop - 1px)) {
+    width: 96px;
+    height: 100px;
+    top: 41px;
+    left: 54px;
+  }
+
+  @media (max-width: ($mobile)) {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.services__weight-gain::before {
+  content: "";
+  display: block;
+  background-color: $image-background-color;
+  border-radius: 50%;
+  position: absolute;
+
+  @media (min-width: ($tablet - 1px)) {
+    top: 92px;
+    right: 63px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: ($desktop - 1px)) {
+    width: 100px;
+    height: 100px;
+    top: 49px;
+    left: 54px;
+  }
+
+  @media (max-width: ($mobile)) {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+.services__weight-gain::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../icons/stack.svg#cat-pro");
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @media (min-width: ($tablet - 1px)) {
+    top: 92px;
+    right: 30px;
+    width: 270px;
+    height: 200px;
+  }
+
+  @media (min-width: ($desktop - 1px)) {
+    width: 133px;
+    height: 100px;
+    top: 45px;
+    left: 34px;
+  }
+
+  @media (max-width: ($mobile)) {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: 15px;
+  }
+}
+
+.services__weight-loss {
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  @media (max-width: $mobile) {
+    padding: 30px 20px 18px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 37px;
+    margin-top: 0;
+    padding: 80px 45% 53px 53px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 77px 61px 62px 52px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+.services__weight-gain {
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  @media (max-width: $mobile) {
+    padding: 30px 20px 18px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 37px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
