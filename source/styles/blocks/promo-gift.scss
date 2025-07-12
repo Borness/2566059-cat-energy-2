@@ -6,12 +6,16 @@
 
 
   @media (min-width: $tablet) {
+    min-width: 707px;
+    min-height: 200px;
     width: 100%;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 99%, #ffffff 1%), image-set("../images/catalog-background-tablet@1x.jpg" 1x type("image/jpg"), "../images/promo-info-background@2x.jpg" 2x type("image/jpg"));
   }
 
   @media (min-width: $desktop) {
     width: 245px;
+    min-width: 100px;
+    min-height: 100px;
     max-height: 285px;
     margin-top: 18px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 99%, #ffffff 1%), image-set("../images/promo-info-background_tablet@1x.jpg" 1x type("image/jpg"), "../images/promo-info-background@2x.jpg" 2x type("image/jpg"));
@@ -33,7 +37,7 @@
   display: block;
 
   @media (min-width: $tablet) {
-    margin: 80px 30px 20px 60px;
+    margin: 58px 38px 21px 80px;
   }
 
   @media (min-width: $desktop) {
@@ -69,7 +73,7 @@
     color: #ffffff;
     width: 170px;
     margin-left: auto;
-    margin-right: 80px;
+    margin-right: 115px;
     font-size: 16px;
     line-height: 20px;
     height: 10px;

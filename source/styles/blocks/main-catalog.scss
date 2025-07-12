@@ -105,7 +105,7 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 60px 60px;
   }
 
   @media (min-width: $desktop) {
@@ -120,7 +120,7 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 65px 30px 74px;
+    padding: 65px 30px 40px;
   }
 
   @media (min-width: $desktop) {
@@ -134,6 +134,8 @@
   @media (min-width: $tablet) {
     position: relative;
     padding: 10px 37px 40px;
+    min-width: 325px;
+    min-height: 510px;
   }
 
   @media (min-width: $desktop) {
@@ -142,6 +144,7 @@
     height: 100%;
     padding: 10px 40px 40px;
     max-width: 245px;
+    min-width: 100px;
   }
 
   @media (max-width: $mobile) {
