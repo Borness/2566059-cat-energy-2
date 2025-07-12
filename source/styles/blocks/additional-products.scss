@@ -5,18 +5,19 @@
   position: relative;
   background-color: #ffffff;
 
+  @media (max-width: $mobile) {
+    margin-left: 20px;
+    width: fit-content;
+    box-shadow: -40px 0 #ffffff;
+    padding-right: 40px;
+    margin-bottom: 36px;
+  }
+
   @media (min-width: $tablet) {
     width: 382px;
     font-size: 32px;
     line-height: 42px;
     padding-left: 40px;
-  }
-
-  @media (max-width: $mobile) {
-    margin-left: 7px;
-    width: fit-content;
-    box-shadow: -40px 0 #ffffff;
-    padding-right: 20px;
   }
 
   @media (min-width: $desktop) {
@@ -61,7 +62,8 @@
   text-transform: uppercase;
 
   @media (max-width: ($tablet - 1px)) {
-    margin-bottom: 13px;
+    margin-bottom: 0;
+    font-size: 16px;
   }
 
   @media (min-width: $tablet) {
@@ -91,7 +93,7 @@
 
   @media (max-width: ($tablet - 1px)) {
     padding-top: 12px;
-    padding-bottom: 18px;
+    padding-bottom: 13px;
     margin-right: 20px;
   }
 
@@ -205,6 +207,11 @@
   font-size: 16px;
   line-height: 20px;
 
+  @media (max-width: $mobile) {
+    margin-top: 7px;
+    text-align: right;
+  }
+
   @media (min-width: $tablet) {
     text-align: right;
     width: 91px;
@@ -223,14 +230,21 @@
 
 .additional-products__weight {
   width: 131px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
+  margin-top: 0;
+
+  @media (max-width: $mobile) {
+    line-height: 20px;
+    margin-top: 7px;
+  }
 
   @media (min-width: $tablet) {
     width: 221px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    margin-top: 13px;
   }
 
   @media (min-width: $desktop) {
@@ -238,6 +252,7 @@
     font-size: 16px;
     line-height: 20px;
     text-align: left;
+    margin-top: 13px;
   }
 }
 
